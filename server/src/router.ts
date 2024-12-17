@@ -21,6 +21,12 @@ import sayActions from "./modules/say/sayActions";
 
 router.get("/", sayActions.sayWelcome);
 
+// Declaration of a "Programs" route
+
+import programActions from "./modules/program/programActions";
+
+router.get("/api/programs", programActions.browse);
+
 /* ************************************************************************* */
 
 export default router;
